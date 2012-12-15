@@ -1,0 +1,16 @@
+This project uses:
+
+node.js
+
+node modules:
+    express
+    express-hbs
+    mysql
+    optimist
+
+on the client side:
+
+    develpr theme
+    knockout.js
+    jquery
+    moment.js
