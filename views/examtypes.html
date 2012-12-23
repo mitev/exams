@@ -189,11 +189,11 @@
 
 
 			<table class="table responsive-table" id="examTypeTable">
-			<div class="table-header button-height">
-				<div class="float-right ">
-					<a id="exam-add" class="button icon-plus  blue-gradient glossy">Add</a>
-				</div> &nbsp
-			</div>			
+				<div class="table-header button-height">
+					<div class="float-right ">
+						<a id="exam-add" class="button icon-plus  blue-gradient glossy">Add</a>
+					</div> &nbsp
+				</div>			
 
 				<thead>
 					<tr>
@@ -203,27 +203,27 @@
 						<th scope="col" width="100" class="align-right">Actions</th>
 					</tr>
 				</thead>
-
-			<tbody data-bind="foreach: examtypes">
+	
+				<tbody data-bind="foreach: examtypes">
 	                    <tr>
 	                    	<th scope="row" class="checkbox-cell"><input type="checkbox" name="checked[]" id="check-1" value="1"></th>
 					        <td data-bind="text: title"></td>
 	                        <td data-bind="text: tag"></td>
-                            <td class="low-padding align-center">
+	                        <td class="low-padding align-center">
 								<span class="button-group compact">
 									<a href="#" class="button icon-pencil with-tooltip" title="Edit"></a>
 									
 									<a href="#" class="button icon-trash with-tooltip confirm" title="Delete" onclick="$(this).removeTooltip()"
-                                       data-bind="click: deleteExamType, clickBubble: false"></a>
+	                                   data-bind="click: deleteExamType, clickBubble: false"></a>
 								</span>
-                            </td>
-
+	                        </td>
+	
 	                    </tr>
-		      </tbody>
+		     	 </tbody>
 
 			</table>
 
-		<form method="post" action="" class="table-footer button-height large-margin-bottom">
+			<form method="post" action="" class="table-footer button-height large-margin-bottom">
 				<div class="float-right">
 					<div class="button-group">
 						<a href="#" title="First page" class="button blue-gradient glossy"><span class="icon-previous"></span></a>
@@ -242,7 +242,7 @@
 				</div>
 				
 				There are <strong data-bind="text: examtypes().length"></strong> items 
-		</form>
+			</form>
 
 		</div>
 	</section>
