@@ -1,4 +1,4 @@
-define('models/participant', ['js/libs/knockout-2.2.0.js', 'js/ajax.js'], function (ko, ajax) {
+define(['js/libs/knockout-2.2.0.js', 'js/ajax.js'], function (ko, ajax) {
     function Participant(json) {
         var self = this;
         json = json || {};
@@ -32,7 +32,6 @@ define('models/participant', ['js/libs/knockout-2.2.0.js', 'js/ajax.js'], functi
     }
 
     Participant.save = function (examId, json, onSuccess) {
-        console.log("saving a participant", json);
         if (examId) {
             if (json.id) {
                 console.log("updating participant", json);
