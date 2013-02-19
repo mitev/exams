@@ -15,7 +15,7 @@ module.exports = function (app, auth, db) {
                     return sanitize(v);
                 }).join(",");
             });
-            res.type("text/csv").send(200, csv);
+            res.type("application/csv").send(200, csv);
         });
     });
 
